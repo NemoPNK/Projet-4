@@ -489,6 +489,18 @@ body {
   animation: showPlat 0.6s ease forwards;
 }
 
+#a-en {
+  animation-delay: 0.2s;
+}
+
+#a-p {
+  animation-delay: 0.5s;
+}
+
+#a-de {
+  animation-delay: 0.8s;
+}
+
 @keyframes showPlat {
   to {
     opacity: 1;
