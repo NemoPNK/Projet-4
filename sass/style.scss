@@ -675,20 +675,9 @@ body {
   font-weight: 300;
 }
 
-.global-content {
-  opacity: 0;
-  animation: showContent 1s ease forwards;
-}
-
 @keyframes hideLoader {
   to {
     opacity: 0;
     visibility: hidden;
-  }
-}
-
-@keyframes showContent {
-  to {
-    opacity: 1;
   }
 }
