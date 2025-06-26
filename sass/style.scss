@@ -1,0 +1,682 @@
+* {
+  font-family: 'Roboto', 'Shrikhand';
+}
+
+body {
+  margin: 0;
+}
+
+
+.headertitle {
+  font-family: 'Shrikhand';
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.headertitle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+
+  i {
+    cursor: pointer;
+    position: absolute;
+    left: 7%;
+    top: 20px;
+    font-size: 20px;
+  }
+}
+
+#menu {
+  box-shadow: none;
+}
+
+.headerundertitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAEAEA;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+
+  &-txt {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.intro-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+  width: 60%;
+  margin: 40px 0px 5px 0px;
+}
+
+.intro-text {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 18px;
+  margin: 10px 0px 20px 0px;
+
+}
+
+.intro-btn {
+  border-radius: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  transition: filter 0.3s ease;
+  height: 50px;
+  width: 59%;
+  max-width: 250px;
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px 55px 0px;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.menu-btn-cont {
+  display:  flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#menu-btn {
+  width: 50%;
+  margin: 20px 0px 35px 0px;
+}
+
+.fonc-div {
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonc-titre {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+  margin: 40px 0px 0px -43%;
+}
+
+.mini-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-card {
+  height: 72px;
+  width: 85%;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  margin: 30px 0px 0px 0px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  background-color: #9356DC;
+  height: 24px;
+  width: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0px 0px 0px -10px;
+}
+
+.fonc-txt {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+
+  i {
+    margin: 0px 20px 0px 20px;
+    color: #7E7E7E;
+    font-size: 18px;
+  }
+
+  i.fa-store {
+    color: #9356DC;
+  }
+}
+
+.resto {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+
+  h2 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0px 0px 0px -55%;
+    padding-top: 50px;
+  }
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 0px 60px 0px;
+}
+
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px 0 0 0;
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.card-img {
+  img {
+    width: 100%;
+    height: 163px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+#boulette {
+  object-fit: cover;
+  object-position: 0% 61%;
+}
+
+.card-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: white;
+
+  h4 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
+    margin: 0;
+  }
+}
+
+.new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 29px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.footer {
+  background-color: #353535;
+  height: 186px;
+  width: 100%;
+}
+
+.footer-title {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+}
+
+.div-footer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    p {
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      margin: 0px;
+      i {
+        font-size: 16px;
+        margin: 0px 20px 0px 0px;
+        max-width: 13px;
+      }
+    }
+}
+
+
+.like {
+  cursor: pointer;
+  position: absolute;
+  right: 8%;
+  bottom: 25px;
+}
+
+.like-checkbox {
+  display: none;
+}
+
+.like .fa-heart {
+  font-size: 21px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  transition: opacity 0.3s ease;
+  padding: 0px 2px;
+}
+
+test
+
+.like-checkbox:checked+.fa-heart {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  animation: fadeInHeart 0.2s forwards;
+}
+
+@keyframes fadeInHeart {
+  to {
+    opacity: 1;
+  }
+}
+
+/* menu */
+
+.plat {
+  background-color: white;
+  height: 69px;
+  width: 92%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0px 0px 10px 0px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: default;
+  width: 100%;
+}
+
+.check {
+  width: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  transition: width 0.3s ease;
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.plat:hover .check {
+  width: 59px;
+}
+
+
+.menu-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px 0px 15px;
+  background-color: white;
+  flex-shrink: 1;
+  min-width: 0;
+
+  h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.price {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 15px;
+  margin: 20px 15px 0px 15px;
+}
+
+.top-img {
+  position: relative;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: -60px 0px 0px 0px;
+}
+
+.content-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 20px;
+
+  h2 {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+    margin: 0px;
+  }
+}
+
+#menulike {
+  position: static;
+  margin-right: 5%;
+}
+
+.plat-container {
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.show-plat {
+  animation: showPlat 0.6s ease forwards;
+}
+
+#a-en {
+  animation-delay: 0.2s;
+}
+
+#a-p {
+  animation-delay: 0.5s;
+}
+
+#a-de {
+  animation-delay: 0.8s;
+}
+
+@keyframes showPlat {
+  to {
+    opacity: 1;
+  }
+}
+
+.plat-title {
+  align-self: flex-start !important;
+  p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+    margin: 20px 0px 14px 15px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .headertitle-box {
+    height: 96px;
+    box-shadow: none;
+
+  }
+
+  .headerundertitle {
+    height: 50px;
+    box-shadow: none;
+  }
+
+  .intro-title {
+    font-size: 40px;
+    margin: 25px 0px 20px 0px;
+  }
+
+  .intro-btn {
+    margin: 10px 0px 30px 0px;
+  }
+
+  .fonc-div {
+    height: auto;
+  }
+
+  .mini-card-container {
+    flex-direction: row;
+    margin: 0px 0px 40px 0px;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .mini-card {
+    min-width: 275px;
+    max-width: 300px;
+    width: 25%;
+  }
+
+  .fonc-titre {
+    margin: 40px 0px 0px 0px ;
+    width: 67%;
+  }
+
+  .resto h2 {
+    padding-top: 25px;
+    width: 67%;
+    margin: 0px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 70%;
+    row-gap: 20px;
+    column-gap: 80px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+    padding: 60px 0px 0px 0px;
+
+  }
+
+  .footer-title {
+    padding: 0px;
+    margin: 0px 60px 0px 120px;
+  }
+
+  .div-footer {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+
+  .headertitle-box i {
+    top: 38px;
+  }
+
+  .top-img img {
+    height: 380px;
+
+  }
+
+  .content {
+    width: 75%;
+    margin: -40px 0px 0px 0px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-title {
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+    h2 {
+      margin-right: 25px;
+    }
+    width: 100%;
+  }
+
+  #menulike {
+    margin: 0px;
+  }
+
+  .plat-container {
+    width: 60%;
+  }
+
+
+}
+
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 10000;
+  animation: hideLoader 1s ease 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-title {
+  font-family: 'Shrikhand';
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.loader-text {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
