@@ -317,16 +317,13 @@ body {
   font-size: 21px;
   color: transparent;
   -webkit-text-stroke: 1px black;
-  transition: opacity 0.3s ease;
   padding: 0px 2px;
 }
 
-test .like-checkbox:checked + .fa-heart {
+.like-checkbox:checked + .fa-heart {
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
           background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0;
   animation: fadeInHeart 0.2s forwards;
 }
